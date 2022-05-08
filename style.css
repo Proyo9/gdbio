@@ -8,15 +8,18 @@ body {
     background-attachment: fixed;
 	color: white;
 	text-align:center;
+	overflow:hidden;
 }
 h1 {
 	font-family: Pusab, Arial;
-	-webkit-text-stroke-width: 1px;
+	color: rgb(255, 230, 67);
+	-webkit-text-stroke-width: 0.5px;
   	-webkit-text-stroke-color: black;
-	font-size: 100px;
+	font-size: 25px;
+	margin: 5px;
 }
 p {
-	font-family: Pusab, Arial;
+	font-family: Pusab, Arial, Helvetica;
 	-webkit-text-stroke-width: 1px;
   	-webkit-text-stroke-color: black;
 	font-size: 25px;
@@ -31,14 +34,42 @@ p {
 	padding: 10px;
 	border-style:ridge;
 	border-width: 10px;
+	border-color:#4b4b4b;
 	margin-top: 20px;
 	display:block;
 	margin-left:auto;
 	margin-right:auto;
 	box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+	max-height:450px;
+	overflow-y: scroll;
+	-webkit-overflow-scrolling:touch;
+	scroll-margin-bottom: none;
+}
+::-webkit-scrollbar {
+    width: 7px;
+}
+                    
+::-webkit-scrollbar-track {
+    display:none;
+}
+                    
+::-webkit-scrollbar-thumb {
+    background-color:gray;
+	border-radius: 5px 5px 5px 5px;
 }
 input {
-	margin-bottom: 25px;
+	height:25px;
+	background-color:transparent;
+	border-style:solid;
+	color:white;
+	text-align:center;
+	margin:3px;
+}
+#sbutton {
+	background-color: transparent;
+	color: white;
+	border-color: white;
+	border-style:solid;
 }
 .thanks {
 	font-family: Pusab, Arial;
@@ -54,4 +85,73 @@ a {
   	-webkit-text-stroke-color: black;
 	font-size: 15px;
 	color: rgb(75, 118, 126);
+}
+#lang {
+	position:absolute;
+	float: right;
+	margin-left:0px;
+	padding:0px;
+	margin-right: auto;
+	margin-left:auto;
+}
+.langbt {
+	width: 100px;
+	height:50px;
+	font-size: 20px;
+	font-family: Helvetica, arial, sans-serif;
+	color: white;
+	background-image: linear-gradient(#323232, #171717);
+	margin-bottom:5px;
+	box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+}
+.langbeta {
+	font-size:10px;
+	font-family: Helvetica, arial, sans-serif;
+	margin:0px;
+	-webkit-text-stroke-width: 0px;
+}
+.quote {
+	font-family: Arial, Helvetica, sans-serif;
+	-webkit-text-stroke-width: 0px;
+	font-size: 15px;
+}
+#portrait {
+	background-color:rgb(77, 77, 77);
+	padding:5px;
+	border-width:3px;
+	border-style:solid;
+	border-color:rgb(180, 180, 180);
+}
+.alert {
+	display:none;
+	padding:5px;
+	background-color: #f44336;
+	color: white;
+	width:50%;
+	margin-right:auto;
+	margin-left:auto;
+	font-size:35px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+#alert {
+	font-family: Arial, Helvetica, sans-serif;
+	-webkit-text-stroke-width: 0px;
+	font-size:15px;
+	margin:0px;
+
+}
+.closebtn {
+	margin-left: 15px;
+	color: white;
+	font-size: 10;
+	line-height: 20px;
+	cursor: pointer;
+	transition: 0.3s;
+	position:static;
+	margin:0px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+  
+.closebtn:hover {
+	color: black;
 }
